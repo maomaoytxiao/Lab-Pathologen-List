@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 317's Pathogen List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    
+  </head>
+
+  <body>
+    <form>
+        <form>
+            <div class="input-group">
+              <label for="id">編號:</label>
+              <input type="text" id="id" placeholder="編號" />
+            </div>
+      <div class="input-group">
+        <label for="species">病原菌名稱:</label>
+        <input type="text" id="species" placeholder="病原菌名稱" />
+      </div>
+      <div class="input-group">
+        <label for="date">分離日期:</label>
+        <input type="date" id="date" />
+      </div>
+      <div class="input-group">
+        <label for="location">分離地點:</label>
+        <input type="text" id="location" placeholder="分離地點" />
+      </div>
+      <div class="input-group">
+        <label for="cropSource">作物來源:</label>
+        <input type="text" id="cropSource" placeholder="作物來源" />
+      </div>
+      <div class="input-group">
+        <label for="unit">單位:</label>
+        <input type="text" id="unit" placeholder="單位" />
+      </div>
+      <button type="submit">新增到清單</button>
+    </form>
+    <div class="sort">
+      <button>利用時間排序</button>
+    </div>
+    <button onclick="downloadCSV()">下載CSV檔案</button>
+
+    <section></section>
+    <script src="./app.js"></script>
+  </body>
+</html>
